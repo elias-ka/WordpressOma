@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-30 11:08:48+0000\n"
+"PO-Revision-Date: 2020-12-14 05:10:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,8 +16,125 @@ msgid "Our default theme for 2020 is designed to take full advantage of the flex
 msgstr "Vuoden 2020 oletusteemamme on suunniteltu ottamaan kaikki tehot irti lohkomuokkaimesta. Yrityksillä  ja järjestöillä on paremmat mahdollisuudet luoda dynaamisia laskeutumissivuja loputtomilla erilaisilla asetteluilla käyttäen ryhmä- ja palstalohkoja. Keskitetty sisältöpalsta ja hiottu typografia tekevät teemasta täydellisen myös perinteisille blogeille. Täydelliset muokkaintyylit antavat sinulle hyvän kuvan siitä, miltä sisältösi näyttää jo ennen kuin julkaiset sen. Voit antaa sivustollesi henkilökohtaisen kosketuksen vaihtamalla teeman värejä Muokkaimessa. Kaikkien sivuston elementtien värit lasketaan automaattisesti valitsemistasi tausta- ja korostusväreistä, mikä takaa kävijöillesi korkean ja saavutettavan värikontrastin."
 
 #. Theme Name of the theme
+#: inc/block-patterns.php:20
 msgid "Twenty Twenty"
 msgstr "Twenty Twenty"
+
+#: classes/class-twentytwenty-customize.php:126
+msgctxt "color"
+msgid "Custom"
+msgstr "Mukautettu"
+
+#: classes/class-twentytwenty-customize.php:125
+msgctxt "color"
+msgid "Default"
+msgstr "Oletus"
+
+#: inc/block-patterns.php:197
+msgid "With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political, and philosophical issues are intrinsic to our program. As visitor, you are invited to guided tours artist talks, lectures, film screenings, and other events with free admission."
+msgstr "UMoMA on seitsemän kerrosta iskevää arkkitehtuuria, jossa on esillä kansainvälistä nykytaidetta, sekä toisinaan taidehistoriaa luotaavia retrospektiivejä. Eksistentialistiset, poliittiset ja filosofiset kysymykset ovat keskeinen elementti ohjelmassamme. Vierailijanamme olet tervetullut opastetuille kierroksille, taiteilijatapaamisiin, elokuvanäytöksiin, sekä muihin tapahtumiin ilman pääsymaksua."
+
+#: inc/block-patterns.php:194
+msgid "The Premier Destination for Modern Art in Sweden"
+msgstr "Modernin taiteen ykköskohde Ruotsissa"
+
+#: inc/block-patterns.php:187
+msgid "Introduction"
+msgstr "Johdanto"
+
+#: inc/block-patterns.php:157 inc/block-patterns.php:171
+msgid "August 1 — December 1"
+msgstr "1. elokuuta – 1. joulukuuta"
+
+#: inc/block-patterns.php:151 inc/block-patterns.php:165
+msgid "Abstract Rectangles"
+msgstr "Abstraktit suorakaiteet"
+
+#: inc/block-patterns.php:142
+msgid "Featured Content"
+msgstr "Korostettu sisältö"
+
+#: inc/block-patterns.php:128
+msgid "<em>Price</em><br>Included"
+msgstr "<em>Hinta</em><br>Sisältää"
+
+#: inc/block-patterns.php:123
+msgid "<em>Location</em><br>Exhibit Hall B"
+msgstr "<em>Paikka</em><br>Näyttelysali B"
+
+#: inc/block-patterns.php:118
+msgid "<em>Dates</em><br>Aug 1 — Dec 1"
+msgstr "<em>Pvm</em><br>1. elokuuta – 1. joulukuuta"
+
+#: inc/block-patterns.php:108
+msgid "Event Details"
+msgstr "Tapahtuman tiedot"
+
+#: inc/block-patterns.php:93
+msgid "Shop Now"
+msgstr "Osta nyt"
+
+#: inc/block-patterns.php:89
+msgid "An awe-inspiring collection of books, prints, and gifts from our exhibitions."
+msgstr "Hämmästyttävä kokoelma kirjoja, vedoksia ja lahjatuotteita näyttelyistämme."
+
+#: inc/block-patterns.php:86
+msgid "The Store"
+msgstr "Kauppa"
+
+#: inc/block-patterns.php:74
+msgid "Award-winning exhibitions featuring internationally-renowned artists."
+msgstr "Palkittuja näyttelyjä kansainvälisesti tunnustetuilta taiteilijoilta"
+
+#: inc/block-patterns.php:71
+msgid "The Museum"
+msgstr "Museo"
+
+#: inc/block-patterns.php:61
+msgid "Double Call to Action"
+msgstr "Tuplatoimintakehote"
+
+#: inc/block-patterns.php:48
+msgid "Become a Member"
+msgstr "Liity jäseneksi"
+
+#: inc/block-patterns.php:42
+msgid "Support the Museum and Get Exclusive Offers"
+msgstr "Tue museota ja saat rajoitettuja tarjouksia"
+
+#: inc/block-patterns.php:33
+msgid "Call to Action"
+msgstr "Toimintakehote"
+
+#: template-parts/modal-menu.php:73
+msgctxt "menu"
+msgid "Mobile"
+msgstr "Mobiili"
+
+#: template-parts/modal-menu.php:48
+msgctxt "menu"
+msgid "Expanded"
+msgstr "Laajennettu"
+
+#: header.php:88
+msgctxt "menu"
+msgid "Horizontal"
+msgstr "Vaakasuunta"
+
+#: header.php:53 header.php:157
+msgctxt "toggle text"
+msgid "Search"
+msgstr "Haku"
+
+#: functions.php:498
+msgctxt "color"
+msgid "Secondary"
+msgstr "Toissijainen"
+
+#: functions.php:493
+msgctxt "color"
+msgid "Primary"
+msgstr "Ensisijainen"
 
 #: index.php:51
 msgid "Nothing Found"
@@ -45,7 +162,7 @@ msgstr "Kategoriat: "
 msgid "Join the Club"
 msgstr "Liity kerhoon"
 
-#: inc/starter-content.php:148
+#: inc/starter-content.php:148 inc/block-patterns.php:45
 msgid "Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually."
 msgstr "Jäsenet pääsevät käsiksi yksinoikeusnäyttelyihin ja myynteihin. Jäsenyys maksaa $99.99 ja laskutetaan vuosittain."
 
@@ -69,7 +186,7 @@ msgstr "\"Cyborgit, kuten filosofi Donna Haraway määritteli, eivät tunne kunn
 msgid "From Signac to Matisse"
 msgstr "Signac'sta Matisseen"
 
-#: inc/starter-content.php:99
+#: inc/starter-content.php:99 inc/block-patterns.php:168
 msgid "The Life I Deserve"
 msgstr "The Life I Deserve"
 
@@ -83,6 +200,8 @@ msgstr "Theatre of Operations"
 
 #: inc/starter-content.php:73 inc/starter-content.php:88
 #: inc/starter-content.php:105 inc/starter-content.php:120
+#: inc/block-patterns.php:78 inc/block-patterns.php:160
+#: inc/block-patterns.php:174
 msgid "Read More"
 msgstr "Lue lisää"
 
@@ -90,7 +209,7 @@ msgstr "Lue lisää"
 msgid "August 1 -- December 1"
 msgstr "1. elokuuta – 1. joulukuuta"
 
-#: inc/starter-content.php:67
+#: inc/starter-content.php:67 inc/block-patterns.php:154
 msgid "Works and Days"
 msgstr "Työt ja päivät"
 
@@ -130,14 +249,6 @@ msgstr "Asetukset \"Kansilehti\"-sivupohjalle. Artikkelikuvaa käytetään kansi
 msgid "Apply a custom color for links, buttons, featured images."
 msgstr "Käytä mukautettua väriä linkeille, painikkeille, artikkelikuville."
 
-#: classes/class-twentytwenty-customize.php:126
-msgid "Custom"
-msgstr "Mukautettu"
-
-#: classes/class-twentytwenty-customize.php:125
-msgid "Default"
-msgstr "Oletusasetus"
-
 #: classes/class-twentytwenty-customize.php:123
 msgid "Primary Color"
 msgstr "Ensisijainen väri"
@@ -167,7 +278,8 @@ msgstr "Ylös %s"
 msgid "To the top %s"
 msgstr "Ylös %s"
 
-#. translators: Copyright date format, see https://www.php.net/date
+#. translators: Copyright date format, see
+#. https://www.php.net/manual/datetime.format.php
 #: footer.php:25
 msgctxt "copyright date format"
 msgid "Y"
@@ -201,14 +313,6 @@ msgstr "Sulje haku"
 msgid "Expanded Social links"
 msgstr "Laajennetut somelinkit"
 
-#: template-parts/modal-menu.php:73
-msgid "Mobile"
-msgstr "Mobiililaite"
-
-#: template-parts/modal-menu.php:48
-msgid "Expanded"
-msgstr "Laajennettu"
-
 #: template-parts/modal-menu.php:21
 msgid "Close Menu"
 msgstr "Sulje valikko"
@@ -226,11 +330,11 @@ msgstr "Alatunniste"
 msgid "By %s"
 msgstr "Kirjoittanut %s"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content.php:48 template-parts/content-cover.php:138
 msgid "Pages:"
 msgstr "Sivut:"
 
-#: template-parts/content-cover.php:138 template-parts/content.php:48
+#: template-parts/content.php:48 template-parts/content-cover.php:138
 msgid "Page"
 msgstr "Sivu"
 
@@ -286,119 +390,107 @@ msgstr "Kirjoittaja"
 msgid "Social Links Menu"
 msgstr "Some-valikko"
 
-#: inc/starter-content.php:177 inc/starter-content.php:187 functions.php:489
+#: inc/starter-content.php:177 inc/starter-content.php:187
 msgid "Primary"
 msgstr "Ensisijainen"
-
-#: header.php:88
-msgid "Horizontal"
-msgstr "Vaakasuora"
 
 #: header.php:76 header.php:137
 msgid "Menu"
 msgstr "Valikko"
 
-#: header.php:53 header.php:157
-msgid "Search"
-msgstr "Haku"
-
 #: template-parts/content.php:36
 msgid "Continue reading"
 msgstr "Lue lisää"
 
-#: functions.php:546
+#: functions.php:550
 msgctxt "Short name of the larger font size in the block editor."
 msgid "XL"
 msgstr "XL"
 
-#: functions.php:545
+#: functions.php:549
 msgctxt "Name of the larger font size in the block editor"
 msgid "Larger"
 msgstr "Suurempi"
 
-#: functions.php:540
+#: functions.php:544
 msgctxt "Short name of the large font size in the block editor."
 msgid "L"
 msgstr "L"
 
-#: functions.php:539
+#: functions.php:543
 msgctxt "Name of the large font size in the block editor"
 msgid "Large"
 msgstr "Suuri"
 
-#: functions.php:534
+#: functions.php:538
 msgctxt "Short name of the regular font size in the block editor."
 msgid "M"
 msgstr "M"
 
-#: functions.php:533
+#: functions.php:537
 msgctxt "Name of the regular font size in the block editor"
 msgid "Regular"
 msgstr "Tavallinen"
 
-#: functions.php:528
+#: functions.php:532
 msgctxt "Short name of the small font size in the block editor."
 msgid "S"
 msgstr "S"
 
-#: functions.php:527
+#: functions.php:531
 msgctxt "Name of the small font size in the block editor"
 msgid "Small"
 msgstr "Pieni"
 
-#: functions.php:512
+#: functions.php:516
 msgid "Background Color"
 msgstr "Taustaväri"
 
-#: functions.php:499
+#: functions.php:503
 msgid "Subtle Background"
 msgstr "Hillitty taustaväri"
 
-#: functions.php:494
-msgid "Secondary"
-msgstr "Toissijainen"
-
-#: functions.php:484
+#: functions.php:488
 msgid "Accent Color"
 msgstr "Pääväri"
 
-#: functions.php:379
+#: functions.php:383
 msgid "Widgets in this area will be displayed in the second column in the footer."
 msgstr "Tämän alueen vimpaimet näytetään alapalkin toisessa palstassa."
 
-#: functions.php:377
+#: functions.php:381
 msgid "Footer #2"
 msgstr "Alapalkki #2"
 
-#: functions.php:367
+#: functions.php:371
 msgid "Widgets in this area will be displayed in the first column in the footer."
 msgstr "Tämän alueen vimpaimet näytetään alapalkin ensimmäisessä palstassa."
 
-#: functions.php:365
+#: functions.php:369
 msgid "Footer #1"
 msgstr "Alapalkki #1"
 
-#: functions.php:340
+#: functions.php:344
 msgid "Skip to the content"
 msgstr "Siirry sisältöön"
 
-#: functions.php:262
+#: functions.php:266
 msgid "Social Menu"
 msgstr "Somevalikko"
 
-#: functions.php:261
+#: functions.php:265
 msgid "Footer Menu"
 msgstr "Alatunnisteen valikko"
 
-#: functions.php:260
+#: functions.php:264
 msgid "Mobile Menu"
 msgstr "Mobiilivalikko"
 
-#: functions.php:259
+#: functions.php:263
 msgid "Desktop Expanded Menu"
 msgstr "Laajennettu valikko isommilla ruuduilla"
 
-#: functions.php:258
+#: functions.php:262
 msgid "Desktop Horizontal Menu"
 msgstr "Vaakasuora valikko isommilla ruuduilla"
 
@@ -449,20 +541,20 @@ msgstr "Näytä alavalikko"
 msgid "#%d (no title)"
 msgstr "#%d (ei otsikkoa)"
 
-#: classes/class-twentytwenty-walker-comment.php:127
+#: classes/class-twentytwenty-walker-comment.php:133
 msgid "By Post Author"
 msgstr "Artikkelin kirjoittajalta"
 
-#: classes/class-twentytwenty-walker-comment.php:92
+#: classes/class-twentytwenty-walker-comment.php:98
 msgid "Your comment is awaiting moderation."
 msgstr "Kommenttisi odottaa tarkastusta."
 
-#: classes/class-twentytwenty-walker-comment.php:77
+#: classes/class-twentytwenty-walker-comment.php:82
 msgid "Edit"
 msgstr "Muokkaa"
 
 #. translators: 1: Comment date, 2: Comment time.
-#: classes/class-twentytwenty-walker-comment.php:69
+#: classes/class-twentytwenty-walker-comment.php:68
 msgid "%1$s at %2$s"
 msgstr "%1$s, klo %2$s"
 
