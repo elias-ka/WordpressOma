@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.6.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-12-05 06:53:02+0000\n"
+"PO-Revision-Date: 2021-01-29 05:16:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,6 +26,26 @@ msgstr "Europe/Helsinki"
 #: wp-admin/upgrade.php:154
 msgid "Continue"
 msgstr "Jatka"
+
+#. translators: %s: The server PHP version.
+#: wp-admin/includes/dashboard.php:1758
+msgid "Your site is running an outdated version of PHP (%s), which should be updated."
+msgstr "Sivustosi käyttää vanhentunutta PHP-versiota (%s), joka on syytä päivittää."
+
+#. translators: %s: The server PHP version.
+#: wp-admin/includes/dashboard.php:1752
+msgid "Your site is running an insecure version of PHP (%s), which should be updated."
+msgstr "Sivustosi käyttää epäturvallista PHP-versiota (%s), joka on syytä päivittää."
+
+#: wp-admin/includes/dashboard.php:42
+msgid "PHP Update Recommended"
+msgstr "PHP-päivitystä suositellaan"
+
+#. translators: %s: The minimum recommended PHP version.
+#: wp-admin/includes/class-wp-site-health.php:729
+#: wp-admin/includes/dashboard.php:1770
+msgid "PHP is the programming language used to build and maintain WordPress. Newer versions of PHP are created with increased performance in mind, so you may see a positive effect on your site&#8217;s performance. The minimum recommended version of PHP is %s."
+msgstr "PHP on ohjelmointikieli, jonka avulla WordPress on rakennettu. PHP:n uudet versiot ovat entistä suorituskykyisempiä, joten tulet todennäköisesti huomaamaan eron sivustosi nopeudessa. Vanhin suositeltu PHP-versio on %s."
 
 #: wp-admin/user-edit.php:766 wp-admin/authorize-application.php:93
 msgid "Your website appears to use Basic Authentication, which is not currently compatible with Application Passwords."
@@ -224,7 +244,7 @@ msgstr "<strong>Sivuston eheys</strong> &mdash; sisältää tietoa asioista, jot
 
 #. translators: %s: Application name.
 #: wp-admin/user-edit.php:874 wp-admin/authorize-application.php:191
-#: wp-admin/js/auth-app.js:87
+#: wp-admin/js/auth-app.js:90
 msgid "Your new password for %s is:"
 msgstr "Uusi salasanasi sovellukselle \"%s\" on:"
 
@@ -278,25 +298,25 @@ msgstr "Emme löytäneet kaupunkia %s. Yritä uudestaan toisella kaupungilla. Es
 msgid "Or"
 msgstr "tai"
 
-#: wp-admin/authorize-application.php:298
+#: wp-admin/authorize-application.php:302
 msgid "You will be returned to the WordPress Dashboard, and no changes will be made."
 msgstr "Palaat WordPressin ohjausnäkymään eikä muutoksia tallenneta."
 
-#: wp-admin/authorize-application.php:280
+#: wp-admin/authorize-application.php:284
 msgid "No, I do not approve of this connection."
 msgstr "En hyväksy tätä yhteyttä."
 
-#: wp-admin/authorize-application.php:273
+#: wp-admin/authorize-application.php:277
 msgid "You will be given a password to manually enter into the application in question."
 msgstr "Sinulle annetaan salasana, jonka syötät käsin kyseiseen sovellukseen."
 
 #. translators: %s: The URL the user is being redirected to.
-#: wp-admin/authorize-application.php:260
-#: wp-admin/authorize-application.php:294
+#: wp-admin/authorize-application.php:264
+#: wp-admin/authorize-application.php:298
 msgid "You will be sent to %s"
 msgstr "Sinut uudelleenohjataan osoitteeseen %s"
 
-#: wp-admin/authorize-application.php:246
+#: wp-admin/authorize-application.php:250
 msgid "Yes, I approve of this connection."
 msgstr "Hyväksyn tämän yhteyden."
 
@@ -334,15 +354,15 @@ msgid "Authorize Application"
 msgstr "Valtuuta sovellus"
 
 #: wp-admin/user-edit.php:881 wp-admin/authorize-application.php:198
-#: wp-admin/js/auth-app.js:95
+#: wp-admin/js/auth-app.js:98
 msgid "Be sure to save this in a safe location. You will not be able to retrieve it."
 msgstr "Tallenna tämä varmaan paikkaan. Et voi hakea sitä myöhemmin."
 
-#: wp-admin/user-edit.php:747 wp-admin/authorize-application.php:223
+#: wp-admin/user-edit.php:747 wp-admin/authorize-application.php:227
 msgid "WordPress App on My Phone"
 msgstr "WordPress-sovellus puhelimessani"
 
-#: wp-admin/user-edit.php:746 wp-admin/authorize-application.php:222
+#: wp-admin/user-edit.php:746 wp-admin/authorize-application.php:226
 msgid "New Application Password Name"
 msgstr "Uuden sovellussalasanan nimi"
 
@@ -1156,7 +1176,7 @@ msgid "Text"
 msgstr "Teksti"
 
 #: wp-admin/includes/meta-boxes.php:353 wp-admin/includes/meta-boxes.php:354
-#: wp-admin/js/post.js:758
+#: wp-admin/js/post.js:766
 msgctxt "post action/button label"
 msgid "Schedule"
 msgstr "Ajasta"
@@ -1475,30 +1495,30 @@ msgid "This localized version contains both the translation and various other lo
 msgstr "Tämä paikallistettu versio sisältää sekä käännöksen että lukuisia muita paikkasidonnaisia muutoksia."
 
 #. translators: 1: Number of issues. 2: URL to Site Health screen.
-#: wp-admin/includes/dashboard.php:1863
+#: wp-admin/includes/dashboard.php:1878
 msgid "Take a look at the <strong>%1$d item</strong> on the <a href=\"%2$s\">Site Health screen</a>."
 msgid_plural "Take a look at the <strong>%1$d items</strong> on the <a href=\"%2$s\">Site Health screen</a>."
 msgstr[0] "Tarkastele <a href=\"%2$s\">Sivuston eheys -näytöltä</a> löytyvää <strong>%1$d kohdetta</strong>."
 msgstr[1] "Tarkastele <a href=\"%2$s\">Sivuston eheys -näytöltä</a> löytyviä <strong>%1$d kohdetta</strong>."
 
-#: wp-admin/includes/dashboard.php:1853
+#: wp-admin/includes/dashboard.php:1868
 msgid "Your site&#8217;s health is looking good, but there are still some things you can do to improve its performance and security."
 msgstr "Sivustosi eheys näyttää hyvältä, mutta on edelleen joitakin asioita, joita voit tehdä parantaaksesi sen suorituskykyä ja tietoturvaa."
 
-#: wp-admin/includes/dashboard.php:1851
+#: wp-admin/includes/dashboard.php:1866
 msgid "Great job! Your site currently passes all site health checks."
 msgstr "Hyvää työtä! Sivustosi läpäisee tällä hetkellä kaikki eheystarkistukset."
 
-#: wp-admin/includes/dashboard.php:1849
+#: wp-admin/includes/dashboard.php:1864
 msgid "Your site has critical issues that should be addressed as soon as possible to improve its performance and security."
 msgstr "Sivustollasi on kriittisiä ongelmia, jotka on syytä korjata välittömästi parantaaksesi sen suorituskykyä ja tietoturvaa."
 
 #. translators: %s: URL to Site Health screen.
-#: wp-admin/includes/dashboard.php:1841
+#: wp-admin/includes/dashboard.php:1856
 msgid "Site health checks will automatically run periodically to gather information about your site. You can also <a href=\"%s\">visit the Site Health screen</a> to gather information about your site now."
 msgstr "Sivuston eheystarkistus ajetaan ajoittain automaattisesti sivustosi tilan määrittämiseksi. Voit myös siirtyä <a href=\"%s\">Sivuston eheys -näytölle</a> tarkistaaksesi sivustosi tilan tässä ja nyt."
 
-#: wp-admin/includes/dashboard.php:1829
+#: wp-admin/includes/dashboard.php:1844
 msgid "No information yet&hellip;"
 msgstr "Ei tietoja toistaiseksi &hellip;"
 
@@ -1771,7 +1791,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/users-add-new-screen/\">
 msgid "This page can show you every detail about the configuration of your WordPress website. For any improvements that could be made, see the <a href=\"%s\">Site Health Status</a> page."
 msgstr "Tällä sivulla näytämme kaikki WordPress-sivustosi asetuksiin liittyvät yksityiskohdat. Jos havaitsemme jotain korjattavaa, kerromme sinulle siitä <a href=\"%s\">Sivuston eheys</a> -sivulla."
 
-#: wp-admin/includes/dashboard.php:1831 wp-admin/site-health-info.php:47
+#: wp-admin/includes/dashboard.php:1846 wp-admin/site-health-info.php:47
 #: wp-admin/site-health.php:52
 msgid "Results are still loading&hellip;"
 msgstr "Tuloksia ladataan vielä&hellip;"
@@ -1854,7 +1874,7 @@ msgstr "https://wordpress.org/support/article/giving-wordpress-its-own-directory
 msgid "<a href=\"https://wordpress.org/support/article/settings-general-screen/\">Documentation on General Settings</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/settings-general-screen/\">Dokumentaatio Asetukset-näkymästä</a>"
 
-#: wp-admin/includes/dashboard.php:1942
+#: wp-admin/includes/dashboard.php:1957
 msgid "https://wordpress.org/support/article/first-steps-with-wordpress/"
 msgstr "https://wordpress.org/support/article/first-steps-with-wordpress/"
 
@@ -1929,11 +1949,6 @@ msgstr "Ajastettu tapahtuma on myöhässä"
 #: wp-admin/includes/class-wp-site-health.php:1509
 msgid "An HTTPS connection is a more secure way of browsing the web. Many services now have HTTPS as a requirement. HTTPS allows you to take advantage of new features that can increase site speed, improve search rankings, and gain the trust of your visitors by helping to protect their online privacy."
 msgstr "HTTPS-yhteys on turvallisempi tapa selata verkkoa. Monilta palveluilta vaaditaan nykyään HTTPS-tukea. Käyttämällä HTTPS-yhteyttä hyödyt parannuksista latausnopeudessa, saat parempia sijoituksia hakukoneissa ja käyttäjät luottavat sivustoosi enemmän kun autat suojaaman heidän yksityisyyttään verkossa."
-
-#. translators: %s: The minimum recommended PHP version.
-#: wp-admin/includes/class-wp-site-health.php:729
-msgid "PHP is the programming language used to build and maintain WordPress. Newer versions of PHP are faster and more secure, so staying up to date will help your site&#8217;s overall performance and security. The minimum recommended version of PHP is %s."
-msgstr "PHP on ohjelmointikieli, jolla WordPress on rakennettu ja jolla se toimii. Uudemmat versiot PHP:sta ovat nopeampia ja turvallisempia. Sivustosi pysyy siis paremmin suorituskykyisenä ja turvallisena kun pidät PHP-version ajan tasalla. Vanhin suositeltu PHP-versio on %s."
 
 #. translators: %s: The current version of WordPress installed on this site.
 #: wp-admin/includes/class-wp-site-health.php:321
@@ -2013,7 +2028,7 @@ msgstr "Kierrä oikealle"
 msgid "Rotate left"
 msgstr "Kierrä vasemmalle"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:145
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:147
 msgid "All automatic updates are disabled."
 msgstr "Kaikki automaattiset päivitykset ovat pois päältä."
 
@@ -2234,10 +2249,6 @@ msgstr "SQL-palvelin on välttämätön ohjelmisto WordPressin käyttämän tiet
 msgid "PHP modules perform most of the tasks on the server that make your site run. Any changes to these must be made by your server administrator."
 msgstr "PHP-moduulien vastuulla on useimmat niistä tehtävistä palvelimella, joiden varassa sivustosi toiminnallisuus on. Niihin tehtävät muutokset vaativat palvelimen ylläpitäjää."
 
-#: wp-admin/includes/dashboard.php:1759
-msgid "PHP is the programming language we use to build and maintain WordPress. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site&#8217;s performance."
-msgstr "PHP on ohjelmointikieli, jolla WordPress on rakennettu. PHP:n uudemmat versiot ovat sekä nopeampia että turvallisempia, joten sen päivittämisellä on positiivinen vaikutus sivustosi suorituskykyyn."
-
 #: wp-admin/includes/class-wp-site-health.php:494
 msgid "Manage your themes"
 msgstr "Hallinnoi teemojasi"
@@ -2348,7 +2359,7 @@ msgstr "Tiedoston %s oikeellisuutta ei voitu varmistaa."
 #. translators: %s: The filename of the package.
 #: wp-admin/includes/file.php:1313
 msgid "The authenticity of %s could not be verified as no signature was found."
-msgstr "Tiedoston %s aitoutta ei voitu todentaa koska digitaalista allekirjoitusta ei löytynyt."
+msgstr "Tiedoston %s aitoutta ei voitu todentaa, koska digitaalista allekirjoitusta ei löytynyt."
 
 #. translators: %s: The filename of the package.
 #: wp-admin/includes/file.php:1240 wp-admin/includes/file.php:1260
@@ -3014,102 +3025,102 @@ msgid "We were unable to check if any new versions of WordPress are available."
 msgstr "Emme kyenneet tarkistamaan, onko WordPressista saatavilla uusia versioita."
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:447
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:449
 msgid "WordPress security and maintenance releases are blocked by the %s filter."
 msgstr "WordPressin turvallisuus- ja huoltopäivitykset estää suodin %s."
 
 #. translators: %s: Name of the constant used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:435
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:437
 msgid "WordPress security and maintenance releases are blocked by %s."
 msgstr "WordPressin turvallisuus- ja huoltopäivitykset estää %s."
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:415
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:417
 msgid "WordPress development updates are blocked by the %s filter."
 msgstr "WordPressin kehityspäivitykset estää suodin %s."
 
 #. translators: %s: Name of the constant used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:403
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:405
 msgid "WordPress development updates are blocked by the %s constant."
 msgstr "WordPressin kehityspäivitykset estää vakio %s."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:379
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:381
 msgid "All of your WordPress files are writable."
 msgstr "Kaikki WordPress-tiedostosi ovat kirjoitettavissa."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:374
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:376
 msgid "Some files are not writable by WordPress:"
 msgstr "WordPress ei voi kirjoittaa kaikkiin tiedostoihin:"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:348
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:350
 msgid "This could mean that connections are failing to WordPress.org."
 msgstr "Yhteydet WordPress.orgiin eivät välttämättä toimi."
 
 #. translators: %s: WordPress version.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:345
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:347
 msgid "Couldn't retrieve a list of the checksums for WordPress %s."
 msgstr "Tarkistussummalistan noutaminen WordPressin versiolle %s epäonnistui."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:293
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:295
 msgid "Your installation of WordPress doesn't require FTP credentials to perform updates."
 msgstr "Päivitysten tekeminen ei edellytä FTP-tunnuksia."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:284
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:286
 msgid "(Your site is performing updates over FTP due to file ownership. Talk to your hosting company.)"
 msgstr "(Sivustosi tekee päivitykset FTP:n avulla tiedostojen oikeuksien vuoksi. Puhu tästä palveluntarjoajallesi.)"
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:283
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:285
 msgid "Your installation of WordPress prompts for FTP credentials to perform updates."
 msgstr "WordPress-asennuksesi pyytää FTP-tunnuksia voidakseen tehdä päivityksiä."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:261
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:263
 msgid "No version control systems were detected."
 msgstr "Versionhallintajärjestelmiä ei havaittu."
 
 #. translators: 1: Folder name. 2: Version control directory.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:252
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:254
 msgid "The folder %1$s was detected as being under version control (%2$s)."
 msgstr "Hakemisto %1$s on versionhallinnan alla (%2$s)."
 
 #. translators: 1: Folder name. 2: Version control directory. 3: Filter name.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:239
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:241
 msgid "The folder %1$s was detected as being under version control (%2$s), but the %3$s filter is allowing updates."
 msgstr "Hakemisto %1$s on versionhallinnan alla (%2$s), mutta suodin %3$s sallii päivitykset."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:184
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:186
 msgid "We'll try again with the next release."
 msgstr "Yritämme uudestaan seuraavan julkaisun yhteydessä."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:179
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:181
 msgid "A previous automatic background update could not occur."
 msgstr "Aikaisempaa automaattista taustapäivitystä ei saatu tehtyä."
 
 #. translators: %s: Code of error shown.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:170
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:187
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:172
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:189
 msgid "The error code was %s."
 msgstr "Virhekoodi oli %s."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:167
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:169
 msgid "When you've been able to update using the \"Update Now\" button on Dashboard > Updates, we'll clear this error for future update attempts."
 msgstr "Kun olet onnistuneesti päivittänyt \"Päivitä nyt\"-napista Ohjausnäkymä > Päivitykset -sivulla, poistamme tämän virheilmoituksen näkyvistä."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:166
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:181
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:168
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:183
 msgid "You would have received an email because of this."
 msgstr "Olet saattanut saada sähköpostia tästä aiheesta."
 
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:165
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:167
 msgid "A previous automatic background update ended with a critical failure, so updates are now disabled."
 msgstr "Aikaisempi automaattinen taustapäivitys päättyi kriittiseen virheeseen, joten päivitykset on kytketty pois päältä."
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:118
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:120
 msgid "The %s filter is enabled."
 msgstr "%s-suodin on kytketty päälle."
 
 #. translators: %s: Name of the filter used.
-#: wp-admin/includes/class-wp-site-health-auto-updates.php:97
+#: wp-admin/includes/class-wp-site-health-auto-updates.php:99
 msgid "A plugin has prevented updates by disabling %s."
 msgstr "Lisäosa on estänyt päivitykset kytkemällä %s-suotimen pois päältä."
 
@@ -3626,30 +3637,18 @@ msgstr "Asennus ei onnistu koska <a href=\"%1$s\">WordPress %2$s</a> vaatii MySQ
 msgid "You cannot install because <a href=\"%1$s\">WordPress %2$s</a> requires PHP version %3$s or higher. You are running version %4$s."
 msgstr "Asennus ei onnistu koska <a href=\"%1$s\">WordPress %2$s</a> vaatii PHP version %3$s tai uudemman. Sinulla on käytössä versio %4$s."
 
-#: wp-admin/includes/dashboard.php:1925
+#: wp-admin/includes/dashboard.php:1940
 msgid "Set up your homepage"
 msgstr "Aseta etusivu"
 
 #: wp-admin/includes/class-wp-site-health.php:736
-#: wp-admin/includes/dashboard.php:1766
+#: wp-admin/includes/dashboard.php:1781
 msgid "Learn more about updating PHP"
 msgstr "Lue lisää PHP:n version päivittämisestä"
 
-#: wp-admin/includes/dashboard.php:1758
+#: wp-admin/includes/dashboard.php:1765
 msgid "What is PHP and how does it affect my site?"
 msgstr "Mikä on PHP ja miten se vaikuttaa sivustooni?"
-
-#: wp-admin/includes/dashboard.php:1752
-msgid "WordPress has detected that your site is running on an outdated version of PHP."
-msgstr "WordPress on havainnut, että sivustoasi ajetaan vanhentuneella PHP versiolla."
-
-#: wp-admin/includes/dashboard.php:1750
-msgid "WordPress has detected that your site is running on an insecure version of PHP."
-msgstr "WordPress on havainnut että sivustosi PHP-versio ei ole turvallinen."
-
-#: wp-admin/includes/dashboard.php:42
-msgid "PHP Update Required"
-msgstr "PHP:n päivitys vaaditaan"
 
 #: wp-admin/includes/plugin.php:2482
 msgid "You can find more details and make changes on the Plugins screen."
@@ -7219,7 +7218,7 @@ msgstr "Vastauksena artikkeliin"
 
 #. translators: 1: Month, 2: Day, 3: Year, 4: Hour, 5: Minute.
 #: wp-admin/includes/template.php:833 wp-admin/js/comment.js:89
-#: wp-admin/js/post.js:775
+#: wp-admin/js/post.js:783
 msgid "%1$s %2$s, %3$s at %4$s:%5$s"
 msgstr "%2$s. %1$s, %3$s klo %4$s.%5$s"
 
@@ -7663,11 +7662,11 @@ msgstr "Muokkaa näkyvyyttä"
 msgid "Edit status"
 msgstr "Muokkaa tilaa"
 
-#: wp-admin/includes/dashboard.php:1937
+#: wp-admin/includes/dashboard.php:1952
 msgid "Manage menus"
 msgstr "Muokkaa valikoita"
 
-#: wp-admin/includes/dashboard.php:1934
+#: wp-admin/includes/dashboard.php:1949
 msgid "Manage widgets"
 msgstr "Muokkaa vimpaimia"
 
@@ -8609,11 +8608,11 @@ msgstr "Valikkojen paikat päivitetty."
 msgid "Your latest changes were saved as a revision."
 msgstr "Tuoreimmat muutokset on tallennettu uutena versiona."
 
-#: wp-admin/includes/media.php:3428
+#: wp-admin/includes/media.php:3429
 msgid "Audio Codec:"
 msgstr "Äänikoodekki:"
 
-#: wp-admin/includes/media.php:3427
+#: wp-admin/includes/media.php:3428
 msgid "Audio Format:"
 msgstr "Ääniformaatti:"
 
@@ -8829,15 +8828,15 @@ msgstr "Otsakkeen teksti -osiossa voit määrittää näytetäänkö kyseinen te
 msgid "You can also choose a background color by clicking the Select Color button and either typing in a legitimate HTML hex value, e.g. &#8220;#ff0000&#8221; for red, or by choosing a color using the color picker."
 msgstr "Voit myös määrittää taustavärin painamalla Valitse väri -nappia ja syöttämällä joko oikean hex-väriarvon (esim. &#8220;#ff0000&#8221; on punainen) tai valitsemalla värin värivalitsimella."
 
-#: wp-admin/includes/dashboard.php:1942
+#: wp-admin/includes/dashboard.php:1957
 msgid "Learn more about getting started"
 msgstr "Lue lisää WordPressin käyttöönotosta"
 
-#: wp-admin/includes/dashboard.php:1940
+#: wp-admin/includes/dashboard.php:1955
 msgid "Turn comments on or off"
 msgstr "Ota kommentointi käyttöön tai pois käytöstä"
 
-#: wp-admin/includes/dashboard.php:1931
+#: wp-admin/includes/dashboard.php:1946
 msgid "More Actions"
 msgstr "Lisää toimintoja"
 
@@ -8921,48 +8920,48 @@ msgstr "WordPress.org-käyttäjätunnuksesi:"
 msgid "If you have marked plugins as favorites on WordPress.org, you can browse them here."
 msgstr "Jos olet merkinnyt lisäosia suosikeiksi WordPress.org:issa, voit selata niitä tässä."
 
-#: wp-admin/includes/dashboard.php:1927
+#: wp-admin/includes/dashboard.php:1942
 msgid "View your site"
 msgstr "Näytä sivustosi"
 
-#: wp-admin/includes/dashboard.php:1924
+#: wp-admin/includes/dashboard.php:1939
 msgid "Add an About page"
 msgstr "Lisää Tietoja-sivu"
 
-#: wp-admin/includes/dashboard.php:1923
+#: wp-admin/includes/dashboard.php:1938
 msgid "Write your first blog post"
 msgstr "Kirjoita ensimmäinen artikkelisi"
 
-#: wp-admin/includes/dashboard.php:1921
+#: wp-admin/includes/dashboard.php:1936
 msgid "Add a blog post"
 msgstr "Lisää blogiartikkeli"
 
-#: wp-admin/includes/dashboard.php:1917 wp-admin/includes/dashboard.php:1920
+#: wp-admin/includes/dashboard.php:1932 wp-admin/includes/dashboard.php:1935
 msgid "Add additional pages"
 msgstr "Lisää uusia sivuja"
 
-#: wp-admin/includes/dashboard.php:1916 wp-admin/includes/dashboard.php:1919
+#: wp-admin/includes/dashboard.php:1931 wp-admin/includes/dashboard.php:1934
 msgid "Edit your front page"
 msgstr "Muokkaa etusivuasi"
 
-#: wp-admin/includes/dashboard.php:1913
+#: wp-admin/includes/dashboard.php:1928
 msgid "Next Steps"
 msgstr "Seuraavaksi"
 
 #. translators: %s: URL to Themes panel in Customizer or Themes screen.
-#: wp-admin/includes/dashboard.php:1907
+#: wp-admin/includes/dashboard.php:1922
 msgid "or, <a href=\"%s\">change your theme completely</a>"
 msgstr "tai <a href=\"%s\">vaihda teema kokonaan uuteen</a>"
 
-#: wp-admin/includes/dashboard.php:1898
+#: wp-admin/includes/dashboard.php:1913
 msgid "Get Started"
 msgstr "Aloita tästä"
 
-#: wp-admin/includes/dashboard.php:1894
+#: wp-admin/includes/dashboard.php:1909
 msgid "We&#8217;ve assembled some links to get you started:"
 msgstr "Näillä linkeillä pääset alkuun:"
 
-#: wp-admin/includes/dashboard.php:1893
+#: wp-admin/includes/dashboard.php:1908
 msgid "Welcome to WordPress!"
 msgstr "Tervetuloa käyttämään WordPressiä!"
 
@@ -9232,16 +9231,16 @@ msgstr "https://fi.wordpress.org/about/"
 msgid "Select All"
 msgstr "Valitse kaikki"
 
-#: wp-admin/includes/meta-boxes.php:175 wp-admin/js/post.js:866
+#: wp-admin/includes/meta-boxes.php:175 wp-admin/js/post.js:874
 msgid "Public, Sticky"
 msgstr "Julkinen, kiinnitetty"
 
 #: wp-admin/includes/meta-boxes.php:108 wp-admin/includes/meta-boxes.php:143
-#: wp-admin/js/post.js:789 wp-admin/js/post.js:791
+#: wp-admin/js/post.js:797 wp-admin/js/post.js:799
 msgid "Privately Published"
 msgstr "Yksityisesti julkaistu"
 
-#: wp-admin/includes/meta-boxes.php:59 wp-admin/js/post.js:820
+#: wp-admin/includes/meta-boxes.php:59 wp-admin/js/post.js:828
 msgid "Save as Pending"
 msgstr "Tallenna arvioitavaksi"
 
@@ -10048,7 +10047,7 @@ msgstr "WordPressiä kehittää maailmanlaajuinen joukko innostuneita yksilöit�
 msgid "For developers"
 msgstr "Kehittäjille"
 
-#: wp-admin/includes/dashboard.php:1899 wp-admin/includes/dashboard.php:1901
+#: wp-admin/includes/dashboard.php:1914 wp-admin/includes/dashboard.php:1916
 msgid "Customize Your Site"
 msgstr "Tee sivustostasi yksilöllinen"
 
